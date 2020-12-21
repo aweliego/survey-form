@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <header>
+    <h1 id="title">A survey on social media usage</h1>
+    <p id="description">
+      Thank you for taking a moment to help us define today's trends in the use
+      of social media
+    </p>
+  </header>
+
+  <body id="main">
+    <form action="" id="survey-form">
+      <!-- Name field -->
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label><br />
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Enter your name"
+          required
+        />
+        <br />
+      </div>
+
+      <!-- Email field -->
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label><br />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="Enter your email address"
+          required
+        />
+        <br />
+      </div>
+
+      <!-- Age field -->
+      <div class="form-group">
+        <label for="number" id="number-label">Age (optional)</label><br />
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="16"
+          max="99"
+          placeholder="Enter your age"
+        />
+        <br />
+      </div>
+
+      <!-- Drop down menu -->
+      <div class="form-group">
+        <label for="frequency" id="dropdown-label"
+          >How often do you check your social media feeds?</label
+        ><br />
+        <select name="frequency" id="dropdown">
+          <option disabled selected value>Select an option</option>
+          <option value="several times a day">Several times a day</option>
+          <option value="daily">Once a day</option>
+          <option value="weekly">A few times a week</option>
+          <option value="monthly">A few times a month</option>
+        </select>
+        <br />
+      </div>
+
+      <!-- Radio buttons -->
+      <div class="form-group">
+        <fieldset>
+          <legend>
+            Choose the option that describes best your activity on social media:
+          </legend>
+          <input
+            type="radio"
+            name="activity"
+            value="occasionally"
+            class="input-radio"
+          />
+          <label for="occasionally"
+            >Very occasionally, I mostly use the chat feature</label
+          ><br />
+          <input
+            type="radio"
+            name="activity"
+            value="not very"
+            class="input-radio"
+          />
+          <label for="not very">Not very, I mostly read/watch content</label
+          ><br />
+          <input
+            type="radio"
+            name="activity"
+            value="moderately"
+            class="input-radio"
+          />
+          <label for="moderately"
+            >Moderately, I often read/watch and but and occasionally
+            share/create content</label
+          ><br />
+          <input
+            type="radio"
+            name="activity"
+            value="highly"
+            class="input-radio"
+          />
+          <label for="highly"
+            >Highly, I read/watch content and also share/create content of my
+            own quite often</label
+          ><br />
+        </fieldset>
+      </div>
+
+      <!-- Checkboxes -->
+      <div class="form-group">
+        <label for="app" id="checkboxes-label"
+          >Which of these apps do you use?</label
+        ><br />
+        <input
+          type="checkbox"
+          name="app"
+          id="app"
+          value="Facebook"
+          class="input-checkbox"
+        />Facebook<br />
+        <input
+          type="checkbox"
+          name="app"
+          id="app"
+          value="Instagram"
+          class="input-checkbox"
+        />Instagram<br />
+        <input
+          type="checkbox"
+          name="app"
+          id="app"
+          value="LinkedIn"
+          class="input-checkbox"
+        />LinkedIn<br />
+        <input
+          type="checkbox"
+          name="app"
+          id="app"
+          value="Twitter"
+          class="input-checkbox"
+        />Twitter<br />
+        <input
+          type="checkbox"
+          name="app"
+          id="app"
+          value="TikTok"
+          class="input-checkbox"
+        />TikTok<br />
+        <input
+          type="checkbox"
+          name="app"
+          id="app"
+          value="SnapChat"
+          class="input-checkbox"
+        />SnapChat<br />
+        <input
+          type="checkbox"
+          name="app"
+          id="app"
+          value="TikTok"
+          class="input-checkbox"
+        />Pinterest<br />
+      </div>
+
+      <!-- Comment section -->
+      <div class="form-group">
+        <label for="comment" id="comment-label">Any additional remarks?</label
+        ><br />
+        <textarea
+          name="comment"
+          id="comment"
+          cols="50"
+          rows="5"
+          placeholder="Enter your comment here"
+        ></textarea>
+        <br />
+      </div>
+
+      <!-- Submit button -->
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
